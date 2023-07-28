@@ -13,7 +13,8 @@ export const Styles = createGlobalStyle`
     box-sizing: border-box;
   }
   html, body{
-    font-family: sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     background-color: #000;
   }
   body{
