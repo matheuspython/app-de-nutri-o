@@ -56,7 +56,7 @@ width: 100%;
       gap: 20px;
       input{
         display: block;
-        width: 100%;
+        width: 450px;
         padding: 0.375rem 0.75rem;
         font-size: 1rem;
         font-weight: 400;
@@ -120,5 +120,94 @@ width: 100%;
         color: var(--primary);
       }
     }
+    .objetivo{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      label{
+        text-align: left;
+      }
+      select{
+        width: 450px;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #6C7293;
+        background-color: #000;
+        background-clip: padding-box;
+        border: 1px solid #000;
+        appearance: none;
+        border-radius: 5px;
+        transition: .4s;
+        outline: none;
+        &:focus{
+          border: 2px solid #EB1616;
+          box-shadow: 0 0 10px rgba(235, 22, 22, 0.7);
+        }
+      }
+    }
+    .estado{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+      label{
+        text-align: left;
+      }
+      select{
+        width: 450px;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #6C7293;
+        background-color: #000;
+        background-clip: padding-box;
+        border: 1px solid #000;
+        appearance: none;
+        border-radius: 5px;
+        transition: .4s;
+        outline: none;
+        &:focus{
+          border: 2px solid #EB1616;
+          box-shadow: 0 0 10px rgba(235, 22, 22, 0.7);
+        }
+      }
+      h3{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 400px;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-family: "Roboto",sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #fff;
+      }
+      .vermelho{
+        color: var(--primary);
+      }
+    }
+    table, th, td {
+border: 1px solid black;
+
+}
+table {
+border-collapse: collapse;
+margin: auto;
+}
+  span{
+    color: #fff;
+  }
+  th, td{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+  }
+  td span{
+    color: red;
+  }
   }
 `;

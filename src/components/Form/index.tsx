@@ -53,7 +53,7 @@ export const Form: React.FC = () => {
           <h3>Seu gasto diário total de energia (TDEE) é de <span className="vermelho">0</span> Kcal</h3>
         </span>
 
-        <span>
+        <span className='objetivo'>
           <label>Qual o seu objetivo</label>
           <select id="nivel-atividade">
             <option value="Sedentario">Emagrecer</option>
@@ -64,7 +64,7 @@ export const Form: React.FC = () => {
           </select>
         </span>
 
-        <span>
+        <span className='estado'>
           <label>Estado atual</label>
           <select id="nivel-atividade">
             <option value="Sedentario">Magrelo</option>
@@ -75,12 +75,12 @@ export const Form: React.FC = () => {
           <h3>De acordo com seu objetivo você deve consumir um total de <span className="vermelho">0</span> Kcal por dia.</h3>
         </span>
 
-        <table className="table table-bordered">
+        <table>
           <thead>
             <tr>
-              <th scope="col"><span >Carboidratos</span></th>
-              <th scope="col"><span  >Gorduras</span></th>
-              <th scope="col"><span >Proteínas</span></th>
+              <th><span >Carboidratos</span></th>
+              <th><span  >Gorduras</span></th>
+              <th><span >Proteínas</span></th>
             </tr>
           </thead>
           <tbody>
