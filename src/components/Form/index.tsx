@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Container } from './styles';
 
 export const Form: React.FC = () => {
+  const [sexo, setSexo] = useState<string>('');
+  const [idade, setIdade] = useState<string>('');
+
+  // const alerta = () => {
+  //   // Use a função de retorno para exibir o valor atualizado de idade
+  //   setIdade((prevIdade) => {
+  //     alert(prevIdade);
+  //     return prevIdade; // Retorna o valor anterior para que o estado não seja alterado
+  //   });
+  // };
+
   return (
     <Container>
       <div className="container">
@@ -10,8 +21,8 @@ export const Form: React.FC = () => {
         <span className='genero'>
           <h2>Gênero:</h2>
           <div>
-            <input type="radio" name="genero" id="" /> <label htmlFor="">Masculino</label>
-            <input type="radio" name="genero" id="" /> <label htmlFor="">Feminino</label>
+            <input type="radio" name="genero" onClick={()=> setSexo('masculino')} /> <label htmlFor="">Masculino</label>
+            <input type="radio" name="genero" onClick={()=> setSexo('feminino')} /> <label htmlFor="">Feminino</label>
           </div>
         </span>
 
@@ -27,7 +38,7 @@ export const Form: React.FC = () => {
 
         <span className='dados'>
           <h2>Idade:</h2>
-          <input type="number" placeholder='idade' />
+          <input type="number" placeholder='idade' onChange={(e)=> {setIdade(e.target.value)}} />
 
           <h2>Altura (cm):</h2>
           <input type="number" placeholder='Altura em cm' />
